@@ -1,5 +1,5 @@
-#include<bits/stdc++.h>
-using namespace std;
+#include<stdio.h>
+#include<stdlib.h>
 
 struct Node* head=NULL;
 struct Node* tail = NULL;
@@ -7,12 +7,12 @@ struct Node* tail = NULL;
 struct Node
 {
     int data;
-    Node* next;
+    struct Node* next;
 }; 
 
-Node* addNode(Node* head,int val)
+struct Node* addNode(struct Node* head,int val)
 {
-    Node* temp = new Node;
+    struct Node* temp = (struct Node*)malloc(sizeof(struct Node));
     temp->data = val;
     temp->next = NULL;
     
@@ -28,11 +28,11 @@ Node* addNode(Node* head,int val)
     return head;
 }
 
-void print(Node* temp)
+void print(struct Node* temp)
 {
     while(temp!=NULL)
     {
-        cout<<temp->data<<"\n";
+        printf("%d\n",temp->data);
         temp = temp->next;
     }
 }
