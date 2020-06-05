@@ -1,2 +1,2 @@
 # PD_DS_Bootcamp
-Executable code
+PolyDimensional data structures bootcamp sample codes.
