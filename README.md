@@ -1,2 +1,2 @@
 # PolyDimensional_DS_Bootcamp
-PolyDimensional data structures bootcamp sample codes.
+Here you can get all the datastructures code implemented using C.
